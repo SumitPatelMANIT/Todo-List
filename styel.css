@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 39, 69);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    min-height: 100vh;
+    overflow: auto;
+    scrollbar-width: none;
+    width: 35rem;
+    background:rgb(31, 23, 75);
+    display: flex;
+    align-items: center;
+  
+    /* justify-content: center; */
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(167, 229, 234);
+   
+}
+
+.section1 {
+
+    position: fixed;
+    background: rgb(31, 23, 75);
+    padding: 0 2rem 2rem 2rem;
+   
+
+}
+
+h2 {
+    font-size: 3rem;
+
+}
+
+.inputBox {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input, .editInput {
+    height: 2rem;
+    width: 100%;
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 99999px;
+
+}
+
+button {
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(79, 11, 147);
+    color: white;
+    border-radius: 99999px;
+}
+
+.section2 {
+
+    width: 100%;
+    margin-top: 9rem;
+    min-height: 100vh;
+ 
+    padding-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card {
+    padding: 0.6rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    /* min-height: 3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: rgb(37, 27, 93);
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+
+
+}
+
+.inputTask {
+    overflow-wrap: break-word;
+    /* width: 68%; */
+    /* text-align: justify; */
+    font-size: 18px;
+    font-weight: 450;
+    /* border: 3px solid rgb(165, 251, 4); */
+}
+
+.taskbtn {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.taskbtn :nth-child(1) {
+    background-color: rgb(250, 53, 8);
+}
+button{
+    transition: all linear 0.2s ;
+    border: 1px solid white;
+}
+button:active{
+scale: 0.9;
+}
+
+.taskbtn :nth-child(2) {
+    background-color: rgb(21, 70, 244);
+}
+
+.section2 .card .saveBtn{
+     display: none;
+}
+.section2 .card .editInput{
+     display: none;
+}
